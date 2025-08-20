@@ -15,7 +15,7 @@ def resume():
     api_key = os.getenv("GROQ_API_KEY")
     client = Groq(api_key=api_key)
     ytt_api = YouTubeTranscriptApi()
-    s=ytt_api.fetch(id)
+    s=ytt_api.fetch(idd)
     list_t = []
     for item in s:
         list_t.append(item.text)
@@ -43,6 +43,7 @@ def resume():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
 
