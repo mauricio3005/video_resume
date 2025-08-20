@@ -5,7 +5,7 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from dotenv import load_dotenv
 import os
 load_dotenv()
-app = flask(__name__)
+app = Flask(__name__)
 @app.route('/webhook',methods=['POST'])
 def resume():
     dados = request.get_json()
@@ -43,6 +43,7 @@ def resume():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
 
