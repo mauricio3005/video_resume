@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, flask
+from Flask import Flask, request, jsonify, flask
 from groq import Groq
 import json
 from youtube_transcript_api import YouTubeTranscriptApi
@@ -43,4 +43,5 @@ def resume():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
